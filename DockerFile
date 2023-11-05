@@ -1,4 +1,4 @@
 FROM openjdk:11-jre
-MAINTAINER com.ofoun
+VOLUME /tmp
 COPY target/springBootDocker-1.0.0.jar springBootDocker-1.0.0.jar
 ENTRYPOINT ["java","-jar","/springBootDocker-1.0.0.jar"]
